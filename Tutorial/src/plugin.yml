@@ -1,0 +1,8 @@
+name: Tutorial
+version: 1.0
+main: de.Malebu.tutorial.main.Main
+
+commands:
+   heal:
+      description: Heilt einen Spieler
+   
