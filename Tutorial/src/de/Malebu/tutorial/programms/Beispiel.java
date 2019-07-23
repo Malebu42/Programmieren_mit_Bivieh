@@ -9,6 +9,11 @@ public class Beispiel {
 		System.out.println(max.getGender().getTranslation());
 		System.out.println(tom.getGender().getTranslation());
 		
+		if(max instanceof Creature) {
+			System.out.println("Er ist eine Kreatur");
+			System.out.println("Er ist keinn wildes Tier");
+		}
+		
 	}
 }
 		
