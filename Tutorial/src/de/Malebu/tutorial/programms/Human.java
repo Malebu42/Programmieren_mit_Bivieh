@@ -1,6 +1,6 @@
 package de.Malebu.tutorial.programms;
 
-public class Human {
+public class Human extends Creature{
 	
 	private static int HumanCounter;
 	
@@ -8,12 +8,15 @@ public class Human {
     private int age;
     private String job;
     private String hobby;
+    private Gender gender;
     
-	public Human(String name, int age, String job, String hobby) {
+	public Human(String name, int age, String job, String hobby, Gender gender) {
 		this.name = name;
 		this.age = age;
 		this.job = job;
 		this.hobby = hobby;
+		this.gender = gender;
+		
 		
 		HumanCounter++;
 	}
@@ -24,6 +27,14 @@ public class Human {
 		System.out.println("Beruf der Person: " + job);
 		System.out.println("Hobby der Person: " + hobby);
 	}
+	
+
+	@Override
+	public void breed() {
+		
+		
+	}
+	
 
 	public String getName() {
 		return name;
@@ -58,6 +69,10 @@ public class Human {
 		this.hobby = hobby;
 	}
 	
+	public Gender getGender() {
+		return gender;
+	}
+
 	
 }
     

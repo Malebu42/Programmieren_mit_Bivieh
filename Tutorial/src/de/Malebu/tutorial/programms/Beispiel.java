@@ -1,13 +1,13 @@
 package de.Malebu.tutorial.programms;
-
+ 
 public class Beispiel {
 	
 	public static void main(String[] args) {
-		Human max = new Human ("Max", 18, "Programmierer", "Badminton");
-		Thief tom = new Thief("Tom", 45, "stehlen" , 50);
+		Human max = new Human ("Max", 18, "Programmierer", "Badminton", Gender.MALE);
+		Thief tom = new Thief("Tom", 45, "stehlen" , 50, Gender.FEMALE);
 		
-		max.printInformation();
-		tom.printInformation();
+		System.out.println(max.getGender().getTranslation());
+		System.out.println(tom.getGender().getTranslation());
 		
 	}
 }

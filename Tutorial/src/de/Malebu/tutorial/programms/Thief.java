@@ -4,8 +4,8 @@ public class Thief extends Human {
 	
 	private int robbedPeople;
 
-	public Thief(String name, int age, String hobby, int robbedPeople) {
-		super(name, age, "Dieb", hobby);
+	public Thief(String name, int age, String hobby, int robbedPeople, Gender gender) {
+		super(name, age, "Dieb", hobby, gender);
 		this.robbedPeople = robbedPeople;
 		// TODO Auto-generated constructor stub
 	}
@@ -16,7 +16,7 @@ public class Thief extends Human {
 		System.out.println("auﬂer dass er schon " + robbedPeople + " Personen ausgebraubt hat");
 	}
 	
-	
+	 
 	public int getRobbedPeople() {
 		return robbedPeople;
 	}
