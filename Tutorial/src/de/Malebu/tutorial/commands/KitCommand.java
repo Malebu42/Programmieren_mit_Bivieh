@@ -17,7 +17,9 @@ public class KitCommand implements CommandExecutor{
 			if(player.hasPermission("Tutorial.kit")) {
 				if (args.length == 0) {
 					
-					
+					Inventory inventory = Bukkit.createInventory(null, 9*3, "§6 Kit-Inventar");
+					player.openInventory(inventory);
+					player.sendMessage("§aDir wurde das Kit-Inventar geöffnet");
 			   
 					
 			} else
