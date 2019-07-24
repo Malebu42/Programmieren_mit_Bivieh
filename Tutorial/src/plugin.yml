@@ -5,4 +5,6 @@ main: de.Malebu.tutorial.main.Main
 commands:
    heal:
       description: Heilt einen Spieler
-   
+   kit:
+      description: Gibt dem Spieler ein Kit!
+    
