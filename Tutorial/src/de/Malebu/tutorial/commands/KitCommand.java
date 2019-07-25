@@ -28,12 +28,31 @@ public class KitCommand implements CommandExecutor{
 					ItemStack item = new ItemStack(Material.BOW);
 					ItemMeta itemMeta = item.getItemMeta();
 					itemMeta.setDisplayName("Heiliger Bogen der Salami");
-					itemMeta.addEnchant(Enchantment.DAMAGE_ALL, 5, false);
+					itemMeta.addEnchant(Enchantment.DAMAGE_ALL, 10000, true);
+					itemMeta.addEnchant(Enchantment.ARROW_INFINITE, 1, false);
 					item.setItemMeta(itemMeta);
-					
-					inventory.addItem(item);
-					item.setAmount(10);
+					item.setAmount(1);
 					inventory.setItem(14, item);
+					
+					ItemStack item2 = new ItemStack(Material.DIAMOND_SWORD);
+					ItemMeta itemMeta2 = item.getItemMeta();
+					itemMeta2.setDisplayName("Heiliges Schwert des Bifi");
+					itemMeta2.addEnchant(Enchantment.DAMAGE_ALL, 10000, true);
+					itemMeta2.addEnchant(Enchantment.DIG_SPEED, 10000, true);
+					itemMeta2.addEnchant(Enchantment.IMPALING, 10000, true);
+					itemMeta2.addEnchant(Enchantment.MENDING, 10000, true);
+					itemMeta2.addEnchant(Enchantment.SWEEPING_EDGE, 10000, true);
+					item2.setItemMeta(itemMeta2);
+					item2.setAmount(1);
+					inventory.setItem(13, item2);
+					
+					ItemStack item3 = new ItemStack(Material.ARROW);
+					ItemMeta itemMeta3 = item.getItemMeta();
+					itemMeta3.setDisplayName("Heilige Pfeile der Salami");
+					itemMeta3.addEnchant(Enchantment.DAMAGE_ALL, 1000, true);
+					item3.setItemMeta(itemMeta3);
+					item3.setAmount(1);
+					inventory.setItem(15, item3);
 					
 					
 					player.openInventory(inventory);
