@@ -6,5 +6,5 @@ commands:
    heal:
       description: Heilt einen Spieler
    kit:
-      description: Gibt dem Spieler ein Kit!
+      description: Gibt dem Spieler ein Kit-Inventar!
     
