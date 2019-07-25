@@ -29,6 +29,10 @@ public class KitCommand implements CommandExecutor{
 					ItemMeta itemMeta = item.getItemMeta();
 					itemMeta.setDisplayName("Heiliger Bogen der Salami");
 					itemMeta.addEnchant(Enchantment.DAMAGE_ALL, 5, false);
+					item.setItemMeta(itemMeta);
+					
+					inventory.addItem(item);
+					item.setAmount(10);
 					
 					
 					player.openInventory(inventory);
