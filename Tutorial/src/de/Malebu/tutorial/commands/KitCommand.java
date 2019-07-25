@@ -33,6 +33,7 @@ public class KitCommand implements CommandExecutor{
 					
 					inventory.addItem(item);
 					item.setAmount(10);
+					inventory.setItem(14, item);
 					
 					
 					player.openInventory(inventory);
