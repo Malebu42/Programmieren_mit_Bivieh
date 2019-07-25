@@ -8,6 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 
 
@@ -24,6 +25,7 @@ public class KitCommand implements CommandExecutor{
 					Inventory inventory = Bukkit.createInventory(null, 9*3, "§6 Kit-Inventar");
 					
 					ItemStack item = new ItemStack(Material.BOW);
+					ItemMeta itemMeta = item.getItemMeta();
 					
 					
 					player.openInventory(inventory);
