@@ -54,6 +54,14 @@ public class KitCommand implements CommandExecutor{
 					item3.setAmount(1);
 					inventory.setItem(15, item3);
 					
+					ItemStack item4 = new ItemStack(Material.ENCHANTED_GOLDEN_APPLE);
+					ItemMeta itemMeta4 = item.getItemMeta();
+					itemMeta4.setDisplayName("Heilige Pfeile der Salami");
+					itemMeta4.addEnchant(Enchantment.DAMAGE_ALL, 1000, true);
+					item4.setItemMeta(itemMeta4);
+					item4.setAmount(100);
+					inventory.setItem(16, item4);
+					
 					
 					player.openInventory(inventory);
 					player.sendMessage("§aDir wurde das Kit-Inventar geöffnet");
