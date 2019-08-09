@@ -62,6 +62,15 @@ public class KitCommand implements CommandExecutor{
 					item4.setAmount(100);
 					inventory.setItem(16, item4);
 					
+					ItemStack item5 = new ItemStack(Material.BLUE_BED);
+					ItemMeta itemMeta5 = item.getItemMeta();
+					itemMeta5.setDisplayName("Heiliges Bett der Salami");
+					itemMeta5.addEnchant(Enchantment.DAMAGE_ALL, 1000, true);
+					item5.setItemMeta(itemMeta5);
+					item5.setAmount(100);
+					inventory.setItem(12, item5);
+					
+					
 					
 					player.openInventory(inventory);
 					player.sendMessage("§aDir wurde das Kit-Inventar geöffnet");
